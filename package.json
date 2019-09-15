@@ -1,0 +1,74 @@
+{
+    "name": "ele-search",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "lib": "vue-cli-service build --target lib --name ele-search --dest lib ./packages/index.js"
+    },
+    "main": "lib/ele-search.umd.min.js",
+    "keywords": [
+        "vue",
+        "element ui",
+        "el-table",
+        "ele-search"
+    ],
+    "homepage": "https://github.com/cqh52306/ele-search",
+    "author": "cqh52306",
+    "license": "MIT",
+    "dependencies": {
+        "core-js": "^2.6.5",
+        "element-ui": "^2.12.0",
+        "vue": "^2.6.10",
+        "vue-router": "^2.0.3"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.11.0",
+        "@vue/cli-plugin-eslint": "^3.11.0",
+        "@vue/cli-service": "^3.11.0",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.16.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "lint-staged": "^8.1.5",
+        "sass": "^1.18.0",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,vue}": [
+            "vue-cli-service lint",
+            "git add"
+        ]
+    },
+    "files": [
+        "dist/**/*"
+    ]
+}
