@@ -1,12 +1,3 @@
-<!--
- * @Descripttion:
- * @version:
- * @Author: caoqinghua
- * @Date: 2019-08-26 20:16:30
- * @LastEditors: caoqinghua
- * @LastEditTime: 2019-09-12 19:30:06
- -->
-
 # ele-search
 
 ## 一、使用方式
