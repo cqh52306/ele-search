@@ -93,7 +93,7 @@ export default {
       deep: true
     },
     value: {
-      handler (newValue) {
+      handler () {
         if (!this.once) {
           this.once = true
           const tempArray = this.value

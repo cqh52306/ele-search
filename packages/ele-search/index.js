@@ -3,16 +3,16 @@
  * @version:
  * @Author: caoqinghua
  * @Date: 2019-09-09 16:58:55
- * @LastEditors: caoqinghua
- * @LastEditTime: 2019-09-12 14:10:44
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2019-09-18 07:39:52
  */
-import EleTables from "./table.vue"
+import EleSearch from "./search.vue"
 
-EleTables.install = Vue => {
-  Vue.component(EleTables.name, EleTables)
+EleSearch.install = Vue => {
+  Vue.component(EleSearch.name, EleSearch)
 }
 
 if (typeof window !== "undefined" && window.Vue) {
-  window.Vue.use(EleTables)
+  window.Vue.use(EleSearch)
 }
-export default EleTables
+export default EleSearch
